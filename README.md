@@ -37,11 +37,11 @@ cargo clippy --all-targets --all-features -- -D warnings
 ```yaml
 repos:
   - repo: https://github.com/doublify/pre-commit-rust
-    rev: v1.0.0
+    rev: v1.0
     hooks:
       - id: fmt
-      - id: clippy
       - id: cargo-check
+      - id: clippy
 ```
 
 然后运行：
